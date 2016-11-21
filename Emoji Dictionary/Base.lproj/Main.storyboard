@@ -75,6 +75,10 @@
                             <constraint firstItem="6Go-G5-ALJ" firstAttribute="centerX" secondItem="tKN-ir-S6j" secondAttribute="centerX" id="zN9-Xj-KCx"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emojiDescriptionLabel" destination="YJH-X8-ppw" id="p0N-gG-FWJ"/>
+                        <outlet property="emojiPoster" destination="6Go-G5-ALJ" id="UCu-3a-GsB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MAF-c2-QB5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

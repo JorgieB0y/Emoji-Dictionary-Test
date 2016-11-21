@@ -10,10 +10,40 @@ import UIKit
 
 class EmojiDescriptionViewController: UIViewController {
 
+    @IBOutlet weak var emojiPoster: UILabel!
+    @IBOutlet weak var emojiDescriptionLabel: UILabel!
+    
+    var emojiReceiver = "Empty"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        emojiPoster.text = emojiReceiver
+        
+        if emojiReceiver == "💩" {
+            emojiDescriptionLabel.text = "A pile of poo with googly eyes!"
+        }
+        
+        if emojiReceiver == "🦁" {
+            emojiDescriptionLabel.text = "A cute Lion!"
+        }
+        
+        if emojiReceiver == "🐹" {
+            emojiDescriptionLabel.text = "A lovely hamster face!"
+        }
+        
+        if emojiReceiver == "🐿" {
+            emojiDescriptionLabel.text = "Squirel eating a nut!"
+        }
+        
+        if emojiReceiver == "😍" {
+            emojiDescriptionLabel.text = "A dude with hearts for eyes. He's in Love!"
+        }
+        
+        if emojiReceiver == "😂" {
+            emojiDescriptionLabel.text = "laughing so hard he's crying!"
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
