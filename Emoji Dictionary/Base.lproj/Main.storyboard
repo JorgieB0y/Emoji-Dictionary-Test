@@ -64,20 +64,38 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPQ-Ue-WkE">
+                                <rect key="frame" x="16" y="423" width="343" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Origin date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKq-hg-EaK">
+                                <rect key="frame" x="16" y="465" width="343" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="6Go-G5-ALJ" firstAttribute="top" secondItem="ZW9-Ac-GuA" secondAttribute="bottom" constant="70" id="Hs3-LT-TZN"/>
+                            <constraint firstItem="6Go-G5-ALJ" firstAttribute="top" secondItem="ZW9-Ac-GuA" secondAttribute="bottom" constant="26" id="Hs3-LT-TZN"/>
                             <constraint firstItem="YJH-X8-ppw" firstAttribute="top" secondItem="6Go-G5-ALJ" secondAttribute="bottom" constant="99" id="TC9-bf-eBb"/>
+                            <constraint firstItem="LKq-hg-EaK" firstAttribute="centerX" secondItem="tKN-ir-S6j" secondAttribute="centerX" id="aL3-cV-u2S"/>
+                            <constraint firstItem="LKq-hg-EaK" firstAttribute="top" secondItem="aPQ-Ue-WkE" secondAttribute="bottom" constant="50" id="ake-Oz-ePe"/>
                             <constraint firstItem="YJH-X8-ppw" firstAttribute="trailing" secondItem="tKN-ir-S6j" secondAttribute="trailingMargin" id="cGg-Jd-4w5"/>
                             <constraint firstItem="YJH-X8-ppw" firstAttribute="leading" secondItem="tKN-ir-S6j" secondAttribute="leadingMargin" id="dkb-jM-Th3"/>
+                            <constraint firstItem="aPQ-Ue-WkE" firstAttribute="centerX" secondItem="tKN-ir-S6j" secondAttribute="centerX" id="rgb-Ww-liY"/>
+                            <constraint firstItem="aPQ-Ue-WkE" firstAttribute="top" secondItem="YJH-X8-ppw" secondAttribute="bottom" constant="50" id="vgu-9K-riw"/>
                             <constraint firstItem="YJH-X8-ppw" firstAttribute="centerY" secondItem="tKN-ir-S6j" secondAttribute="centerY" constant="71" id="xeK-35-8Di"/>
                             <constraint firstItem="6Go-G5-ALJ" firstAttribute="centerX" secondItem="tKN-ir-S6j" secondAttribute="centerX" id="zN9-Xj-KCx"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="categoryLabel" destination="aPQ-Ue-WkE" id="DHq-sV-W6D"/>
                         <outlet property="emojiDescriptionLabel" destination="YJH-X8-ppw" id="p0N-gG-FWJ"/>
                         <outlet property="emojiPoster" destination="6Go-G5-ALJ" id="UCu-3a-GsB"/>
+                        <outlet property="originDateLabel" destination="LKq-hg-EaK" id="hiT-f2-Gh4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MAF-c2-QB5" userLabel="First Responder" sceneMemberID="firstResponder"/>

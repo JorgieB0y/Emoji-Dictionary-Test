@@ -10,39 +10,20 @@ import UIKit
 
 class EmojiDescriptionViewController: UIViewController {
 
+    @IBOutlet weak var originDateLabel: UILabel!
+    @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var emojiPoster: UILabel!
     @IBOutlet weak var emojiDescriptionLabel: UILabel!
     
-    var emojiReceiver = "Empty"
+    var emojiReceiver = EmojiClass()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        emojiPoster.text = emojiReceiver
-        
-        if emojiReceiver == "💩" {
-            emojiDescriptionLabel.text = "A pile of poo with googly eyes!"
-        }
-        
-        if emojiReceiver == "🦁" {
-            emojiDescriptionLabel.text = "A cute Lion!"
-        }
-        
-        if emojiReceiver == "🐹" {
-            emojiDescriptionLabel.text = "A lovely hamster face!"
-        }
-        
-        if emojiReceiver == "🐿" {
-            emojiDescriptionLabel.text = "Squirel eating a nut!"
-        }
-        
-        if emojiReceiver == "😍" {
-            emojiDescriptionLabel.text = "A dude with hearts for eyes. He's in Love!"
-        }
-        
-        if emojiReceiver == "😂" {
-            emojiDescriptionLabel.text = "laughing so hard he's crying!"
-        }
+        emojiPoster.text = emojiReceiver.emojiLabel
+        categoryLabel.text = "Category: \(emojiReceiver.emojiCategory)"
+        emojiDescriptionLabel.text = "\(emojiReceiver.emojiDescription)"
+        originDateLabel.text = "Birthyear: \(emojiReceiver.emojiBirthyear)"
         
     }
 
